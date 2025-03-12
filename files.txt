@@ -1,0 +1,25 @@
+def write_stu():
+    students=["ID,NAME,AGE",
+              "1,LAK,20",
+              "2,RAM,19"]
+    with open("students.txt","w")as file:
+        for student in students:
+            file.write(student+"\n")
+        print("\n student rec written successfully")
+def read_stu():
+    with open("students.txt","r")as file:
+        print("stu rec")
+        for line in file:
+            print(line.strip())
+def append_stu():
+    id=int(input("enter id:"))
+    name=input("enter name")
+    age=int(input("enter age"))
+    with open("students.txt","a")as file:
+        file.write(f"{id},{name},{age}\n")
+        print("student appended ")
+write_stu()
+read_stu()    
+append_stu()
+read_stu() 
+    
