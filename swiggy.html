@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Swiggy Web Layout</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    body {
+      background-color: #fff8f0;
+    }
+
+    .header {
+      background-color: #ff5722;
+      color: white;
+      padding: 25px;
+      text-align: center;
+      font-size: 32px;
+      font-weight: bold;
+    }
+
+    .nav {
+      background-color: #ffe0cc;
+      padding: 12px;
+      text-align: center;
+      font-size: 18px;
+      border-bottom: 2px solid #ffab91;
+    }
+     .nav a {
+      color: #d84315;
+      text-decoration: none;
+      font-weight: bold;
+      padding: 0 8px;
+    }
+
+    .nav a:hover {
+      text-decoration: underline;
+    }
+
+    .main-container {
+      display: flex;
+      margin: 25px;
+      gap: 20px;
+    }
+
+    .sidebar {
+      background-color: #fff3e0;
+      padding: 20px;
+      width: 20%;
+      border-radius: 8px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+
+    .main-content {
+      background-color: #ffffff;
+      padding: 20px;
+      width: 60%;
+      border-radius: 8px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+
+    .footer {
+      background-color: #ff5722;
+      color: white;
+      padding: 18px;
+      text-align: center;
+      margin-top: 30px;
+      font-size: 14px;
+    }
+
+    .restaurant {
+      display: flex;
+      align-items: center;
+      gap: 15px;
+      border-bottom: 1px solid #ddd;
+      padding: 15px 0;
+    }
+
+    .restaurant img {
+      width: 100px;
+      height: 80px;
+      object-fit: cover;
+      border-radius: 6px;
+      border: 1px solid #ddd;
+    }
+
+    .restaurant-details h3 {
+      color: #ff5722;
+      margin-bottom: 5px;
+    }
+
+    .restaurant-details p {
+      margin: 5px 0;
+      font-size: 15px;
+    }
+
+    .offer {
+      background-color: #fff0e0;
+      padding: 8px;
+      margin-top: 5px;
+      font-size: 14px;
+      color: #d84315;
+      border-radius: 4px;
+    }
+
+    .sidebar h3 {
+      margin-bottom: 10px;
+      color: #d84315;
+    }
+
+    ul {
+      list-style-type: none;
+    }
+
+    ul li {
+      padding: 5px 0;
+      font-size: 15px;
+    }
+ .advertisement {
+      margin-top: 25px;
+      text-align: center;
+    }
+   
+.advertisement iframe {
+      width: 100%;
+      height: 315px;
+      border-radius: 8px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+      border: none;
+    }
+    .sidebar h3.festive-heading {
+  margin-top: 20px;
+  color: #c62828;
+  font-size: 17px;
+  text-decoration: underline;
+}
+
+.sidebar ul.festive-list li {
+  background-color: #ffeaea;
+  margin-bottom: 6px;
+  padding: 6px;
+  border-radius: 4px;
+  font-size: 14px;
+  color: #b71c1c;
+  font-weight: 500;
+}
+
+
+  </style>
+</head>
+<body>
+
+  <div class="header">Swiggy Express</div>
+
+  <div class="nav">
+    <a href="https://www.swiggy.com" target="_blank">Home</a> |
+    <a href="https://www.swiggy.com/restaurants" target="_blank">Browse Restaurants</a> |
+    <a href="https://www.swiggy.com/collections/53196?tag=top_offer" target="_blank">Today's Deals</a> |
+    <a href="https://www.swiggy.com/support" target="_blank">Help</a> |
+    <a href="https://www.swiggy.com/my-account" target="_blank">Sign In</a>
+  </div>
+
+ 
+
+  <div class="main-container">
+    
+    <div class="sidebar">
+      <h3>Categories</h3>
+      <ul>
+        <li>South Indian</li>
+        <li>North Indian</li>
+        <li>Chinese</li>
+        <li>Fast Food</li>
+        <li>Desserts</li>
+      </ul>
+    </div>
+
+    <div class="main-content">
+
+      <div class="restaurant">
+        <img src="https://t4.ftcdn.net/jpg/04/36/36/57/360_F_436365754_z3i5Es0sFmZuLY6GZIzdiU01v9HqpGZe.jpg" alt="Biryani">
+        <div class="restaurant-details">
+          <h3>Spice Hub</h3>
+          <p>Specialties: Biryani, Butter Chicken, Naan</p>
+          <div class="offer"> 20% OFF on all orders above ₹299!!!</div>
+        </div>
+      </div>
+
+      <div class="restaurant">
+        <img src="https://images.pexels.com/photos/5560763/pexels-photo-5560763.jpeg?cs=srgb&dl=pexels-saveurssecretes-5560763.jpg&fm=jpg" alt="Dosa">
+        <div class="restaurant-details">
+          <h3>Madras Tiffin Centre</h3>
+          <p>Specialties: Idli, Dosa, Pongal</p>
+          <div class="offer"> Flat ₹50 OFF on your first order</div>
+        </div>
+      </div>
+
+      <div class="restaurant">
+        <img src="https://png.pngtree.com/background/20211216/original/pngtree-a-plate-of-hot-and-dry-noodles-in-wuhan-snacks-during-picture-image_1533466.jpg" alt="Noodles">
+        <div class="restaurant-details">
+          <h3>Wok & Roll</h3>
+          <p>Specialties: Hakka Noodles, Manchurian, Spring Rolls</p>
+          <div class="offer"> Buy 1 Get 1 Free on Combo Meals</div>
+        </div>
+      </div>
+
+      <div class="restaurant">
+        <img src="https://www.shutterstock.com/image-photo/piece-tasty-sponge-cake-fresh-260nw-2512952685.jpg" alt="Desserts">
+        <div class="restaurant-details">
+          <h3>Sweet Tooth</h3>
+          <p>Specialties: Chocolate Cake, Gulab Jamun, Ice Cream</p>
+          <div class="offer">🍰 30% OFF on all desserts</div>
+        </div>
+      </div>
+<div class="advertisement">
+  <iframe width="100%" height="315" 
+    src="https://www.youtube.com/embed/2edRqCNV_gQ" 
+    title="Swiggy Ad" 
+    frameborder="0" 
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+    allowfullscreen>
+  </iframe>
+</div>
+
+      
+
+
+    </div>
+
+    <div class="sidebar">
+      <h3>Filters</h3>
+      <ul>
+        <li>Ratings 4 & above</li>
+        <li>Pure Veg</li>
+        <li>Offers only</li>
+        <li>Delivery under 30 min</li>
+        <li>Free Delivery</li>
+      </ul>
+      <h3 class="festive-heading">Festive Offers</h3>
+     <ul class="festive-list">
+  <li>✨ Diwali Dhamaka - 50% OFF</li>
+  <li>🎄 Christmas Combos</li>
+  <li>🎉 New Year Feast Deals</li>
+  <li>🌙 Ramzan Special Biryani</li>
+</ul>
+
+
+
+    </div>
+
+  </div>
+
+  <div class="footer">
+    © 2025 Swiggy Express|mail:swiggy@gmail.com
+  </div>
+
+</body>
+</html>
